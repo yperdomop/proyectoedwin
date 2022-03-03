@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/splide-default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
 
     <style type="text/css">
       .navbar .megamenu{ padding: 1rem; }
@@ -37,14 +38,15 @@
     {{--  navegación  --}}
     <nav class="navbar navbar-expand-lg" style="background-color:#E67E22">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="{{asset('img/logos/logo perfect work.svg')}}" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="{{asset('img/logos/logo perfect work.svg')}}" width="154" height="74"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+              <button class="btn btn-outline-dark me-2" type="submit">Buscar</button>
+              <button class="btn btn-outline-dark"><i class="fas fa-cart-shopping"></i></button>
             </form>
           </div>
         </div>
@@ -158,41 +160,45 @@
       <h2 class="text-center page-section-heading" style="color: #303030">Los más vendidos</h2>
       <div class="container container--flex">
           <div class="column column--50-25">
-              <img src="img/1.jpg" alt="" class="today-special__img">
+              <img src="img/10.jpg" alt="" class="today-special__img">
               <div class="today-special__title">Especiales del 2017</div>
               <div class="today-special__price">$100</div>
           </div>
           <div class="column column--50-25">
-              <img src="img/2.jpg" alt="" class="today-special__img">
+              <img src="img/11.png" alt="" class="today-special__img">
               <div class="today-special__title">Especiales del 2018</div>
               <div class="today-special__price">$100</div>
           </div>
           <div class="column column--50-25">
-              <img src="img/1.jpg" alt="" class="today-special__img">
+              <img src="img/12.jpg" alt="" class="today-special__img">
               <div class="today-special__title">Especiales del 2019</div>
               <div class="today-special__price">$100</div>
           </div>
           <div class="column column--50-25">
-              <img src="img/6.jpg" alt="" class="today-special__img">
+              <img src="img/13.jpg" alt="" class="today-special__img">
               <div class="today-special__title">Especiales del 2020</div>
               <div class="today-special__price">$100</div>
           </div>
       </div>
   </section>
   {{--  slider2  --}}
-  <div class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide"><img src="img/descarga.jpg"></li>
-        <li class="splide__slide"><img src="img/2.jpg"></li>
-        <li class="splide__slide"><img src="img/8.jpg"></li>
-      </ul>
-    </div>
-    <div class="splide__progress">
-      <div class="splide__progress__bar">
+  <section class="page-section pb-3">
+    <h2 class="page-section-heading text-center mb-3" style="color: #303030">Ofertas del día</h2>
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="img/14.jpg"></li>
+          <li class="splide__slide"><img src="img/15.jpg"></li>
+          <li class="splide__slide"><img src="img/16.png"></li>
+        </ul>
+      </div>
+      <div class="splide__progress">
+        <div class="splide__progress__bar">
+        </div>
       </div>
     </div>
-  </div>
+  </section>  
   
   {{--  testimonios  --}}
   <section class="page-section" id="servicios">
@@ -250,11 +256,17 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Ubicación</h4>
+                        <h4 class="text-uppercase mb-4">Dónde estamos</h4>
                         <p class="lead mb-0">
-                            Juan andres Sandoval, Yadir perdomo
-                            Bosa: Calle 78 Bis Sur 95-27
-                            <br>Bogotá D.C, Colombia
+                            Perfect Work Publicidad
+                            <br>
+                            <i class="fas fa-fw fa-phone"></i> PBX: (+57) 601 589 7460
+                            <br>
+                            <i class="fas fa-fw fa-info"></i>info@perfectworkpublicidad.com
+                            <br>
+                            <i class="fas fa-fw fa-map-location-dot"></i> Carrera 9 # 8-15
+                            <br>
+                            <i class="fas fa-fw fa-city"></i> Bogotá D.C, Colombia
                             </p>
 
                     </div>
@@ -262,25 +274,34 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Visita nuestras redes</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-whatsapp"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Acerca de</h4>
+                        <h4 class="text-uppercase mb-4">Políticas</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                            <a class="text-white" href="">Políticas de privacidad</a>
+                            <br>
+                            <a class="text-white" href="">Términos y condiciones</a>
+                            <br>
+                            <a class="text-white" href="">Quiénes somos</a>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
+
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Perfect Work 2022</small></div>
+            
+            <div class="d-flex justify-content-between align-self-center">
+              <div><img class="" src="{{asset('img/logos/logo perfect work.svg')}}" width="100" height="50"></div>
+              <small>Derechos reservados &copy; Perfect Work 2022</small>
+              <div></div>
+            </div>
         </div>
 {{--  script  --}}
 <script src="{{ mix('js/app.js') }}" defer></script>
