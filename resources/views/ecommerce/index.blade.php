@@ -43,11 +43,19 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
-              <button class="btn btn-outline-dark me-2" type="submit">Buscar</button>
-              <button class="btn btn-outline-dark"><i class="fas fa-cart-shopping"></i></button>
-            </form>
+          <div class="d-flex">
+              <form >
+                <div class="input-group mb-3">
+                  <input class="form-control" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
+                  <button class="input-group-text me-2"><i class="fas fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+              <a href="" class="text-dark text-center me-2"><i class="fas fa-cart-shopping"></i>
+                <br> Mi carrito
+              </a>
+              <a href="" class="text-dark text-center" data-bs-toggle="dropdown"><i class="fas fa-user"></i>
+                <br> Mi cuenta
+              </a>
           </div>
         </div>
     </nav>
@@ -262,7 +270,7 @@
                             <br>
                             <i class="fas fa-fw fa-phone"></i> PBX: (+57) 601 589 7460
                             <br>
-                            <i class="fas fa-fw fa-info"></i>info@perfectworkpublicidad.com
+                            <i class="fas fa-fw fa-envelope"></i> info@perfectworkpublicidad.com
                             <br>
                             <i class="fas fa-fw fa-map-location-dot"></i> Carrera 9 # 8-15
                             <br>
@@ -298,7 +306,7 @@
         <div class="copyright py-4 text-center text-white">
             
             <div class="d-flex justify-content-between align-self-center">
-              <div><img class="" src="{{asset('img/logos/logo perfect work.svg')}}" width="100" height="50"></div>
+              <div><img class="me-4" src="{{asset('img/logos/logo perfect work.svg')}}" width="100" height="50"></div>
               <small>Derechos reservados &copy; Perfect Work 2022</small>
               <div></div>
             </div>

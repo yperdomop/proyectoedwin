@@ -196,11 +196,10 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     text-align: center;
     text-decoration: none;
-    width: 120px;
+    height: 35px;
     background: #DE423A;
     color: white;
     padding: 10px;
-    margin: 10px auto;
 }
 .group__title{
     font-family: 'pacifico',cursive;
@@ -216,12 +215,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .today-special__img{
     margin: auto;
-    max-width: 350px;  
+    max-width: 350px;
+    padding-top: 5px; 
 }
 .today-special__title{
     font-size: 1.3em;
     padding-top: 10px;
-    padding-bottom: 20px;  
+    padding-bottom: 5px;  
 }
 .today-special__price{
     font-size: 1.5em;
