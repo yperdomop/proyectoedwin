@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+ }
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    width: 100%;
+    border: 1px solid $naranja-fuerte;
+    border-radius: 0.5em;
+    margin-top: 0.2em; 
+}
+
+.product__img{
+    margin: auto;
+    max-width: 350px;   
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+.product__title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 0.5em; 
+}
+.product__price{
+    font-size: 1.5em;
+    color: $naranja-fuerte;
+    font-weight: bold;
+    padding-bottom: 0.3em;
+    padding-left: 0.5em;       
+}
+
+.bg-nav{
+    background-color:$gris-oscuro;
+}
+
+.footer{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $gris-claro;
+    color: #fff;
+}
+
+.lead-footer{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.btn-social{
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-footer{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-footer:hover{
+    color: $naranja-claro;
+}
+
+.page-section {
+    padding: 3rem 0;
+}
+
+.page-section .page-section-heading{
+    font-size: 2.25rem;
+    line-height: 2rem;
+    color: $gris-oscuro;
+    font-weight: 700;
+}
+
+.copyright {
+    background-color: $naranja-fuerte;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 992px){
+    .page-section .page-section-heading{
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+}
+
+@media screen and (min-width:480px){
+    .column--50-25{
+        width: 49%;
+     }
+
+     .product__img{
+        height: 200px;
+        object-fit: cover;    
+     }
+}
+
+@media screen and (min-width:768px){
+    .column--50-25{
+        width: 24.5%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .product__title{
+        font-size: 1.4em;
+    }
+    .product__price{
+        font-size: 1.8em; 
+     }
+}
+
+.btn-outline-blanconaranja {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .btn-outline-blanconaranja:hover {
+    color: #000;
+    background-color: $naranja-claro;
+    border-color: $naranja-claro;
+  }
