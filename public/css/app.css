@@ -11515,6 +11515,11 @@ body {
   font-size: 1.1rem;
 }
 
+.testimonio-borde {
+  border: 1px solid #E67E22;
+  border-radius: 1em;
+}
+
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
@@ -11530,6 +11535,17 @@ body {
     height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .buscar-pequeno {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .buscar {
+    visibility: hidden;
+    height: 0;
   }
 }
 @media screen and (min-width: 768px) {

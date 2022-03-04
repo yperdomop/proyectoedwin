@@ -11,16 +11,26 @@
 </head>
 
 <body>
-    <header class="container-fluid d-flex justify-content-between" style="background-color:#E67E22">
-        <a class="navbar-brand" href="#"><img src="{{ asset('img/logos/logo perfect work.svg') }}" width="154"></a>
-        <div class="d-flex">
-        <div class="input-group me-2">
+    {{--  header  --}}
+    <header class="container-fluid" style="background-color:#E67E22">
+        <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="{{route('ecommerce.index')}}"><img src="{{ asset('img/logos/logo perfect work.svg') }}" width="154"></a>
+            <div class="d-flex align-self-center">
+            <div class="input-group me-2 buscar">
+                <input class="form-control" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
+                <span class="input-group-text"><i class="fas fa-magnifying-glass"></i></span>
+            </div>
+                <button class="btn btn-outline-dark me-2"><i class="fas fa-cart-shopping"></i></button>
+                <button class="btn btn-outline-dark"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+        <div class="input-group me-2 buscar-pequeno">
             <input class="form-control" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
             <span class="input-group-text"><i class="fas fa-magnifying-glass"></i></span>
         </div>
-            <button class="btn btn-outline-dark"><i class="fas fa-cart-shopping"></i></button>
-        </div>
     </header>
+    
+
     {{-- menu productos más vendidos --}}
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-nav">
         <div class="container-fluid">
@@ -166,9 +176,9 @@
         <div class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="img/14.jpg"></li>
-                    <li class="splide__slide"><img src="img/15.jpg"></li>
-                    <li class="splide__slide"><img src="img/16.png"></li>
+                    <li class="splide__slide"><img src="img/11.png" width="100%" style="border-radius: 1em"></li>
+                    <li class="splide__slide"><img src="img/12.jpg" width="100%" style="border-radius: 1em"></li>
+                    <li class="splide__slide"><img src="img/13.jpg" width="100%" style="border-radius: 1em"></li>
                 </ul>
             </div>
             <div class="splide__progress">
@@ -190,7 +200,7 @@
 
                 <!-- Servicios Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card">
+                    <div class="testimonio-borde">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">Programación web</h5>
@@ -202,7 +212,7 @@
                 </div>
                 <!-- Portfolio Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card">
+                    <div class="testimonio-borde">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">Sistemas de información</h5>
@@ -215,7 +225,7 @@
                 </div>
                 <!-- Portfolio Item 3-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card">
+                    <div class="testimonio-borde">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">E-Commerce</h5>

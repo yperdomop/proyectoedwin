@@ -89,11 +89,16 @@ body{
     font-size: 1.1rem;
 }
 
+.testimonio-borde{
+    border: 1px solid $naranja-fuerte;
+    border-radius: 1em;
+}
+
 @media (min-width: 992px){
     .page-section .page-section-heading{
-    font-size: 3rem;
-    line-height: 2.5rem;
-}
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
 }
 
 @media screen and (min-width:480px){
@@ -104,6 +109,19 @@ body{
      .product__img{
         height: 200px;
         object-fit: cover;    
+     }
+
+     .buscar-pequeno{
+        visibility: hidden;
+        height: 0;
+     }
+
+}
+
+@media screen and (max-width:480px){
+    .buscar{
+        visibility: hidden;
+        height: 0;
      }
 }
 
@@ -131,3 +149,5 @@ body{
     background-color: $naranja-claro;
     border-color: $naranja-claro;
   }
+
+  
