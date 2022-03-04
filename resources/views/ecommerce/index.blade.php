@@ -124,6 +124,7 @@
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
           </button>
+<<<<<<< HEAD
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -131,6 +132,129 @@
           </button>
       </div>
     </section>
+=======
+          
+          <div class="d-flex">
+              <form >
+                <div class="input-group mb-3">
+                  <input class="form-control" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
+                  <button class="input-group-text me-2"><i class="fas fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+              <a href="" class="text-dark text-center me-2"><i class="fas fa-cart-shopping"></i>
+                <br> Mi carrito
+              </a>
+              <a href="" class="text-dark text-center" data-bs-toggle="dropdown"><i class="fas fa-user"></i>
+                <br> Mi cuenta
+              </a>
+          </div>
+        </div>
+    </nav>
+    {{--  menu productos  --}}
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color:#303030">
+      <div class="container-fluid">
+        <label class="navbar-brand">Catálogo</label>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown"> Mega menu  </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu One</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Two</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Three</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div>    
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Four</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                </div><!-- end row --> 
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
+          </ul>
+          
+        </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+    </nav>
+
+       {{--  banner carrusel --}}
+
+       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{asset('img/carousel.jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{asset('img/carousel1.jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{asset('img/carousel2.jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    {{--  Tarjetas  --}}
+>>>>>>> 2806274414ebff33f09c2c776975ca235d86ef4e
 
     {{-- Tarjetas --}}
     <section class="page-section pb-3">
@@ -178,6 +302,7 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     {{-- testimonios --}}
     <section class="page-section" id="servicios">
         <div class="container">
@@ -207,6 +332,25 @@
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">Sistemas de información</h5>
                             <p class="card-text">Administra y controla tu negocio, de una forma facíl y eficaz.
+=======
+<!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Dónde estamos</h4>
+                        <p class="lead mb-0">
+                            Perfect Work Publicidad
+                            <br>
+                            <i class="fas fa-fw fa-phone"></i> PBX: (+57) 601 589 7460
+                            <br>
+                            <i class="fas fa-fw fa-envelope"></i> info@perfectworkpublicidad.com
+                            <br>
+                            <i class="fas fa-fw fa-map-location-dot"></i> Carrera 9 # 8-15
+                            <br>
+                            <i class="fas fa-fw fa-city"></i> Bogotá D.C, Colombia
+>>>>>>> 2806274414ebff33f09c2c776975ca235d86ef4e
                             </p>
                             <p class="card-text fw-bold">¡Animate al cambio!.</p>
                             <a href="#" class="stretched-link"></a>
@@ -230,6 +374,7 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Footer-->
     <footer class="footer text-center">
         <div class="container">
@@ -275,6 +420,14 @@
                         <a class="link-footer" href="">Quiénes somos</a>
                     </p>
                 </div>
+=======
+        <div class="copyright py-4 text-center text-white">
+            
+            <div class="d-flex justify-content-between align-self-center">
+              <div><img class="me-4" src="{{asset('img/logos/logo perfect work.svg')}}" width="100" height="50"></div>
+              <small>Derechos reservados &copy; Perfect Work 2022</small>
+              <div></div>
+>>>>>>> 2806274414ebff33f09c2c776975ca235d86ef4e
             </div>
         </div>
     </footer>
