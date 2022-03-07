@@ -251,6 +251,9 @@
                         <img src="{{ asset('img/logos/logo-footer.png') }}" width="154">
                         <br>
                         <br>
+                        <i class="fas fa-fw fa-mobile"></i> (+57) 311 830 1697<br>
+                        <i class="fas fa-fw fa-mobile-button"></i> (+57) 301 334 5069
+                        <br>
                         <i class="fas fa-fw fa-phone"></i> PBX: (+57) 601 589 7460
                         <br>
                         <i class="fas fa-fw fa-envelope"></i> info@perfectworkpublicidad.com
@@ -264,16 +267,11 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4 fw-bold">Visita nuestras redes</h4>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.facebook.com/perfectworkpublicidad" target="_blank"><i
-                            class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.instagram.com/perfectworkpublicidad" target="_blank"><i
-                            class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.youtube.com/channel/UCrvkyHRx59GzanD7undhJLw" target="_blank"><i
-                            class="fab fa-fw fa-youtube"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.linkedin.com/company/perfect-work-co/about" target="_blank"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://api.whatsapp.com/send?phone=573118301697&app=facebook&entry_point=page_cta&fbclid=IwAR3lbxrUwVzMYNioYkmZiEUV_LfNXdHIETpPeTvaaysbgPrKqCLtdbIzba4" target="_blank"><i
-                            class="fab fa-fw fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.facebook.com/perfectworkpublicidad" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.instagram.com/perfectworkpublicidad" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.youtube.com/channel/UCrvkyHRx59GzanD7undhJLw" target="_blank"><i class="fab fa-fw fa-youtube"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://co.linkedin.com/company/perfect-work-co" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://api.whatsapp.com/send?phone=573118301697&app=facebook&entry_point=page_cta&fbclid=IwAR3lbxrUwVzMYNioYkmZiEUV_LfNXdHIETpPeTvaaysbgPrKqCLtdbIzba4" target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">
