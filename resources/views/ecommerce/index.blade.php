@@ -200,7 +200,7 @@
 
                 <!-- Servicios Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="testimonio-borde">
+                    <div class="card testimonio-borde">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">Programación web</h5>
@@ -212,7 +212,7 @@
                 </div>
                 <!-- Portfolio Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="testimonio-borde">
+                    <div class="card testimonio-borde">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">Sistemas de información</h5>
@@ -225,7 +225,7 @@
                 </div>
                 <!-- Portfolio Item 3-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="testimonio-borde">
+                    <div class="card testimonio-borde">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body" style="height: 250px">
                             <h5 class="card-title text-center">E-Commerce</h5>
@@ -248,7 +248,8 @@
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4 fw-bold">Dónde estamos</h4>
                     <p class="lead-footer mb-0">
-                        Perfect Work Publicidad
+                        <img src="{{ asset('img/logos/logo-footer.png') }}" width="154">
+                        <br>
                         <br>
                         <i class="fas fa-fw fa-phone"></i> PBX: (+57) 601 589 7460
                         <br>
@@ -263,15 +264,15 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4 fw-bold">Visita nuestras redes</h4>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="#!"><i
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.facebook.com/perfectworkpublicidad" target="_blank"><i
                             class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="#!"><i
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.instagram.com/perfectworkpublicidad" target="_blank"><i
                             class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="#!"><i
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.youtube.com/channel/UCrvkyHRx59GzanD7undhJLw" target="_blank"><i
                             class="fab fa-fw fa-youtube"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="#!"><i
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.linkedin.com/company/perfect-work-co/about" target="_blank"><i
                             class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="#!"><i
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://api.whatsapp.com/send?phone=573118301697&app=facebook&entry_point=page_cta&fbclid=IwAR3lbxrUwVzMYNioYkmZiEUV_LfNXdHIETpPeTvaaysbgPrKqCLtdbIzba4" target="_blank"><i
                             class="fab fa-fw fa-whatsapp"></i></a>
                 </div>
                 <!-- Footer About Text-->
