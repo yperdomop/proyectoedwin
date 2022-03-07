@@ -178,7 +178,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide"><img src="img/11.png" width="100%" style="border-radius: 1em"></li>
                     <li class="splide__slide"><img src="img/12.jpg" width="100%" style="border-radius: 1em"></li>
-                    <li class="splide__slide"><img src="img/13.jpg" width="100%" style="border-radius: 1em"></li>
+                    <li class="splide__slide"><img src="img/13.jpg" width="100%" style="border-radius: 1em"d></li>
                 </ul>
             </div>
             <div class="splide__progress">
@@ -248,7 +248,8 @@
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4 fw-bold">Dónde estamos</h4>
                     <p class="lead-footer mb-0">
-                        Perfect Work Publicidad
+                        <img src="{{ asset('img/logos/logo-footer.png') }}" width="154">
+                        <br>
                         <br>
                         <i class="fas fa-fw fa-phone"></i> PBX: (+57) 601 589 7460
                         <br>
