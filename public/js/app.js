@@ -11802,10 +11802,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ "./node_modules/@splidejs/splide/dist/js/splide.esm.js");
 
 window.splide = new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"]('.splide', {
+  type: 'loop',
   autoplay: true,
   rewind: true,
   pauseOnHover: false,
   perPage: 2,
+  perMove: 1,
   gap: 10,
   fixedHeight: 320,
   pauseOnFocus: false,
