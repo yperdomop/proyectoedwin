@@ -11,27 +11,29 @@
 </head>
 
 <body>
-    {{--  header  --}}
+    {{-- header --}}
     <header class="container-fluid bg-naranja pb-1">
         <div class="d-flex justify-content-between">
-            <a class="navbar-brand" href="{{route('ecommerce.index')}}"><img src="{{ asset('img/logos/logo perfect work.svg') }}" width="154"></a>
+            <a class="navbar-brand" href="{{ route('ecommerce.index') }}"><img src="{{ asset('img/logos/logo perfect work.svg') }}" width="154"></a>
             <div class="d-flex align-self-center">
-            <div class="input-group me-2 buscar">
-                <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
-                <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
-            </div>
+                <div class="input-group me-2 buscar">
+                    <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?"
+                        aria-label="Search">
+                    <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
+                </div>
                 <button class="btn btn-outline-dark me-2"><i class="fas fa-cart-shopping"></i></button>
                 <button class="btn btn-outline-dark"><i class="fas fa-user"></i></button>
             </div>
         </div>
         <div class="input-group me-2 buscar-pequeno">
-            <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
+            <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?"
+                aria-label="Search">
             <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
         </div>
     </header>
-    
 
-    {{-- menu productos más vendidos --}}
+
+    {{-- menu productos --}}
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-nav">
         <div class="container-fluid">
             <label class="navbar-brand">Catálogo</label>
@@ -39,7 +41,9 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="main_nav">
+
+            {{-- menu pc --}}
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
 
                     <li class="nav-item dropdown has-megamenu">
@@ -48,6 +52,7 @@
                             <div class="row g-3">
                                 <div class="col-lg-3">
                                     <div class="col-megamenu">
+
                                         <h6 class="title">Title Menu One</h6>
                                         <ul class="list-unstyled">
                                             <li><a href="#">Custom Menu</a></li>
@@ -101,45 +106,114 @@
                             </div><!-- end row -->
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
+
                 </ul>
 
+            </div>
+
+            {{-- menu mobile --}}
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-bs-toggle="dropdown"> Mega menu </a>
+                        <ul class="dropdown-menu">
+
+                            <li class="has-megasubmenu">
+                                <a class="dropdown-item" href="#"> Title Menu One </a>
+                                <div class="megasubmenu dropdown-menu">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="has-megasubmenu">
+                                <a class="dropdown-item" href="#"> Title Menu Two </a>
+                                <div class="megasubmenu dropdown-menu">
+
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="has-megasubmenu">
+                                <a class="dropdown-item" href="#"> Title Menu Three </a>
+                                <div class="megasubmenu dropdown-menu">
+
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="has-megasubmenu">
+                                <a class="dropdown-item" href="#"> Title Menu Four </a>
+                                <div class="megasubmenu dropdown-menu">
+
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a href="#">Custom Menu</a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
             </div> <!-- navbar-collapse.// -->
+
         </div> <!-- container-fluid.// -->
     </nav>
 
     {{-- banner carrusel oferta --}}
-    <section >
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                  class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="{{ asset('img/carousel.jpg') }}" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                  <img src="{{ asset('img/carousel1.jpg') }}" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                  <img src="{{ asset('img/carousel2.jpg') }}" class="d-block w-100" alt="...">
-              </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
-      </div>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('img/carousel.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('img/carousel1.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('img/carousel2.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     {{-- Tarjetas --}}
@@ -168,7 +242,7 @@
             </div>
         </div>
     </section>
-    
+
     {{-- slider2 --}}
     <section class="page-section pb-3">
         <h2 class="page-section-heading text-center mb-3">Ofertas del día</h2>
@@ -178,7 +252,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide"><img src="img/11.png" width="100%" style="border-radius: 1em"></li>
                     <li class="splide__slide"><img src="img/12.jpg" width="100%" style="border-radius: 1em"></li>
-                    <li class="splide__slide"><img src="img/13.jpg" width="100%" style="border-radius: 1em"d></li>
+                    <li class="splide__slide"><img src="img/13.jpg" width="100%" style="border-radius: 1em" d></li>
                 </ul>
             </div>
             <div class="splide__progress">
@@ -267,11 +341,21 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4 fw-bold">Visita nuestras redes</h4>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.facebook.com/perfectworkpublicidad" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.instagram.com/perfectworkpublicidad" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://www.youtube.com/channel/UCrvkyHRx59GzanD7undhJLw" target="_blank"><i class="fab fa-fw fa-youtube"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://co.linkedin.com/company/perfect-work-co" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-blanconaranja btn-social mx-1" href="https://api.whatsapp.com/send?phone=573118301697&app=facebook&entry_point=page_cta&fbclid=IwAR3lbxrUwVzMYNioYkmZiEUV_LfNXdHIETpPeTvaaysbgPrKqCLtdbIzba4" target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1"
+                        href="https://www.facebook.com/perfectworkpublicidad" target="_blank"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1"
+                        href="https://www.instagram.com/perfectworkpublicidad" target="_blank"><i
+                            class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1"
+                        href="https://www.youtube.com/channel/UCrvkyHRx59GzanD7undhJLw" target="_blank"><i
+                            class="fab fa-fw fa-youtube"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1"
+                        href="https://co.linkedin.com/company/perfect-work-co" target="_blank"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-blanconaranja btn-social mx-1"
+                        href="https://api.whatsapp.com/send?phone=573118301697&app=facebook&entry_point=page_cta&fbclid=IwAR3lbxrUwVzMYNioYkmZiEUV_LfNXdHIETpPeTvaaysbgPrKqCLtdbIzba4"
+                        target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">

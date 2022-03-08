@@ -1,9 +1,33 @@
 .navbar .megamenu{ padding: 1rem; }
+.megasubmenu{ padding:1rem; }
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
-    .navbar .has-megamenu{position:static!important;}
-    .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+    .navbar .has-megamenu{
+        position:static!important;
+    }
+    .navbar .megamenu{
+        left:0; right:0; width:100%; margin-top:0;
+    }
+    .navbar .nav-item .dropdown-menu{ 
+        display: none; 
+    }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{
+         display: block; 
+    }
+	.navbar .nav-item .dropdown-menu{
+         margin-top:0; 
+    }
+    #main_nav{visibility: hidden};
+    .megasubmenu{ 
+		left:100%; top:0; min-height: 100%; min-width:500px;
+	}
+	
+	.dropdown-menu > li:hover .megasubmenu{
+		display: block;
+	}
 
 }	
 /* ============ desktop view .end// ============ */

@@ -11741,6 +11741,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./splide */ "./resources/js/splide.js");
 
+__webpack_require__(/*! ./megamenu */ "./resources/js/megamenu.js");
+
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
@@ -11788,6 +11790,58 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/megamenu.js":
+/*!**********************************!*\
+  !*** ./resources/js/megamenu.js ***!
+  \**********************************/
+/***/ (() => {
+
+window.addEventListener("resize", function () {
+  "use strict";
+
+  window.location.reload();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  /////// Prevent closing from click inside dropdown
+  document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+    element.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  }); // make it as accordion for smaller screens
+
+  if (window.innerWidth < 992) {
+    // close all inner dropdowns when parent is closed
+    document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+      everydropdown.addEventListener('hidden.bs.dropdown', function () {
+        // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.megasubmenu').forEach(function (everysubmenu) {
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+      });
+    });
+    document.querySelectorAll('.has-megasubmenu a').forEach(function (element) {
+      element.addEventListener('click', function (e) {
+        var nextEl = this.nextElementSibling;
+
+        if (nextEl && nextEl.classList.contains('megasubmenu')) {
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+
+          if (nextEl.style.display == 'block') {
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+        }
+      });
+    });
+  } // end if innerWidth
+
+}); // DOMContentLoaded  end
 
 /***/ }),
 
