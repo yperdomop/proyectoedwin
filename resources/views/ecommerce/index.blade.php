@@ -7,10 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perfect Work</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    {{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/styles.css') }}"> --}}
 </head>
 
 <body>
+
+  {{--    Precarcaraga
+    <div class="center section" id="circulo">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+         <div class="hide" id="contenido">  --}}
     {{--  header  --}}
     <header class="container-fluid" style="background-color:#E67E22">
         <div class="d-flex justify-content-between">
@@ -296,8 +313,28 @@
             <div></div>
         </div>
     </div>
+{{--  </div>  --}}
     {{-- script --}}
     <script src="{{ mix('js/app.js') }}"></script>
+
+    {{--  Precarga  --}}
+    {{--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  --}}
+
+   {{--   <script>
+        window.addEventListener('load', () => {
+         
+           setTimeout(carga,2000);
+           
+           function carga() {
+
+            document.getElementById('circulo').className='hide';
+            document.getElementById('contenido').className='';
+
+           }
+
+          
+        })
+    </script>  --}}
 </body>
 
 </html>
