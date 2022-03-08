@@ -1,10 +1,12 @@
 import Splide from '@splidejs/splide';
 
 window.splide = new Splide( '.splide', {
-    autoplay    : true,
-    rewind      : true,
+    type: 'loop',
+    autoplay: true,
+    rewind: true,
     pauseOnHover: false,
-    perPage      : 2,
+    perPage: 2,
+    perMove: 1,
     gap: 10,
     fixedHeight: 320,
     pauseOnFocus: false,

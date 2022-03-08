@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perfect Work</title>
+    <link rel="icon" href="{{ asset('img/logos/favicon.png') }}" type="image/x-icon">
+    <title>Perfect Work - Impresos y Publicidad</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/styles.css') }}"> --}}
 </head>
 
 <body>
     {{--  header  --}}
-    <header class="container-fluid" style="background-color:#E67E22">
+    <header class="container-fluid bg-naranja pb-1">
         <div class="d-flex justify-content-between">
             <a class="navbar-brand" href="{{route('ecommerce.index')}}"><img src="{{ asset('img/logos/logo perfect work.svg') }}" width="154"></a>
             <div class="d-flex align-self-center">
             <div class="input-group me-2 buscar">
-                <input class="form-control" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
-                <span class="input-group-text"><i class="fas fa-magnifying-glass"></i></span>
+                <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
+                <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
             </div>
                 <button class="btn btn-outline-dark me-2"><i class="fas fa-cart-shopping"></i></button>
                 <button class="btn btn-outline-dark"><i class="fas fa-user"></i></button>
             </div>
         </div>
         <div class="input-group me-2 buscar-pequeno">
-            <input class="form-control" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
-            <span class="input-group-text"><i class="fas fa-magnifying-glass"></i></span>
+            <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?" aria-label="Search">
+            <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
         </div>
     </header>
     
@@ -43,10 +43,10 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link" href="#" data-bs-toggle="dropdown"> Mega menu </a>
+                        <a class="nav-link text-white" href="#" data-bs-toggle="dropdown"> Mega menu </a>
                         <div class="dropdown-menu megamenu" role="menu">
                             <div class="row g-3">
-                                <div class="col-lg-3 col-6">
+                                <div class="col-lg-3">
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu One</h6>
                                         <ul class="list-unstyled">
@@ -59,7 +59,7 @@
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->
-                                <div class="col-lg-3 col-6">
+                                <div class="col-lg-3">
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu Two</h6>
                                         <ul class="list-unstyled">
@@ -72,7 +72,7 @@
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->
-                                <div class="col-lg-3 col-6">
+                                <div class="col-lg-3">
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu Three</h6>
                                         <ul class="list-unstyled">
@@ -85,7 +85,7 @@
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div>
-                                <div class="col-lg-3 col-6">
+                                <div class="col-lg-3">
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu Four</h6>
                                         <ul class="list-unstyled">
