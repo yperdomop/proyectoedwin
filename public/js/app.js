@@ -11799,11 +11799,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
   \**********************************/
 /***/ (() => {
 
-window.addEventListener("resize", function () {
-  "use strict";
-
-  window.location.reload();
-});
 document.addEventListener("DOMContentLoaded", function () {
   /////// Prevent closing from click inside dropdown
   document.querySelectorAll('.dropdown-menu').forEach(function (element) {
@@ -11856,34 +11851,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ "./node_modules/@splidejs/splide/dist/js/splide.esm.js");
 
 window.splide = new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"]('.splide', {
+  classes: {
+    arrow: 'splide__arrow bg-naranja'
+  }
+}).mount();
+new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"]('#splidePrincipal', {
   type: 'loop',
   autoplay: true,
-  rewind: true,
-  pauseOnHover: false,
-  perPage: 2,
+  resetProgress: false,
+  classes: {
+    page: 'splide__pagination__page bg-splide'
+  }
+}).mount();
+new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"]('#splidePromo', {
+  type: 'loop',
+  perPage: 4,
   perMove: 1,
   gap: 10,
-  fixedHeight: 320,
-  pauseOnFocus: false,
+  pagination: false,
+  classes: {
+    arrow: 'splide__arrow bg-naranja'
+  },
   breakpoints: {
-    320: {
-      fixedHeight: 80
-    },
-    375: {
-      fixedHeight: 100
-    },
-    425: {
-      fixedHeight: 110
+    480: {
+      perPage: 1
     },
     768: {
-      fixedHeight: 200
-    },
-    1024: {
-      fixedHeight: 280
+      perPage: 2
     }
   }
-});
-splide.mount();
+}).mount();
 
 /***/ }),
 

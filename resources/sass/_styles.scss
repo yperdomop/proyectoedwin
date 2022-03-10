@@ -131,6 +131,10 @@ body{
         height: 0;
         width: 0;
      }
+     .product__img{
+        height: 180px;
+        object-fit: cover;    
+     }
 }
 
 @media screen and (min-width:768px){

@@ -1,6 +1,26 @@
 .navbar .megamenu{ padding: 1rem; }
 .megasubmenu{ padding:1rem; }
 
+.title{
+    text-decoration: none;
+    color: $naranja-fuerte;
+    font-weight: bold;
+}
+.title:hover, .title:active{
+    color: $gris-oscuro;
+}
+.link-producto{
+    color: $gris-claro;
+    text-decoration: none;
+}
+.link-producto:hover, .link-producto:active{
+    color: $naranja-claro;
+}
+
+.dropdown-subcategoria:hover, .dropdown-subcategoria:focus, .dropdown-subcategoria:active, .dropdown-subcategoria.active{
+    background-color: $naranja-claro;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
@@ -13,14 +33,18 @@
     .navbar .nav-item .dropdown-menu{ 
         display: none; 
     }
-	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .nav-link{
+        color: $naranja-claro;
+     }
 	.navbar .nav-item:hover .dropdown-menu{
          display: block; 
     }
 	.navbar .nav-item .dropdown-menu{
          margin-top:0; 
     }
-    #main_nav{visibility: hidden};
+    #main_nav{
+        content-visibility: hidden;
+    };
     .megasubmenu{ 
 		left:100%; top:0; min-height: 100%; min-width:500px;
 	}
@@ -40,5 +64,9 @@
         max-height: 90vh;
         margin-top:10px;
     }
+
+    .navbar .nav-item:hover .nav-link{
+        color: $naranja-claro;
+     }
 }
 /* ============ mobile view .end// ============ */

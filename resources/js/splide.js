@@ -1,32 +1,35 @@
 import Splide from '@splidejs/splide';
 
-window.splide = new Splide( '.splide', {
+window.splide = new Splide('.splide', {
+  classes: {
+    arrow: 'splide__arrow bg-naranja',
+  },
+}).mount();
+
+  new Splide('#splidePrincipal',{
     type: 'loop',
     autoplay: true,
-    rewind: true,
-    pauseOnHover: false,
-    perPage: 2,
+    resetProgress: false,
+    classes: {
+      page: 'splide__pagination__page bg-splide',
+    },
+  }).mount();
+
+  new Splide ('#splidePromo' ,{
+    type: 'loop',
+    perPage: 4,
     perMove: 1,
     gap: 10,
-    fixedHeight: 320,
-    pauseOnFocus: false,
+    pagination: false,
+    classes: {
+      arrow: 'splide__arrow bg-naranja',
+    },
     breakpoints: {
-      320: {
-        fixedHeight: 80
-      },
-      375: {
-        fixedHeight: 100
-      },
-      425: {
-        fixedHeight: 110
+      480: {
+        perPage: 1,
       },
       768: {
-        fixedHeight: 200
-      },
-      1024: {
-        fixedHeight: 280
+        perPage: 2,
       },
     }
-  } );
-  
-  splide.mount();
+  } ).mount();

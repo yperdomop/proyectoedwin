@@ -9,7 +9,6 @@
     <title>Perfect Work - Impresos y Publicidad</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     {{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  --}}
-    {{-- <link rel="stylesheet" href="{{ asset('css/styles.css') }}"> --}}
 </head>
 
 <body>
@@ -36,8 +35,7 @@
             <a class="navbar-brand" href="{{ route('ecommerce.index') }}"><img src="{{ asset('img/logos/logo perfect work.svg') }}" width="154"></a>
             <div class="d-flex align-self-center">
                 <div class="input-group me-2 buscar">
-                    <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?"
-                        aria-label="Search">
+                    <input class="form-control no-focus border-dark" type="text" placeholder="¿Qué buscas hoy?">
                     <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
                 </div>
                 <button class="btn btn-outline-dark me-2"><i class="fas fa-cart-shopping"></i></button>
@@ -45,19 +43,15 @@
             </div>
         </div>
         <div class="input-group me-2 buscar-pequeno">
-            <input class="form-control no-focus border-dark" type="search" placeholder="¿Qué buscas hoy?"
-                aria-label="Search">
+            <input class="form-control no-focus border-dark" type="text" placeholder="¿Qué buscas hoy?">
             <span class="input-group-text bg-naranja border-dark"><i class="fas fa-magnifying-glass"></i></span>
         </div>
     </header>
-
-
     {{-- menu productos --}}
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-nav">
         <div class="container-fluid">
             <label class="navbar-brand">Catálogo</label>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -66,20 +60,20 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link text-white" href="#" data-bs-toggle="dropdown"> Mega menu </a>
+                        <a class="nav-link" href="#" data-bs-toggle="dropdown"> Mega menu </a>
                         <div class="dropdown-menu megamenu" role="menu">
                             <div class="row g-3">
                                 <div class="col-lg-3">
                                     <div class="col-megamenu">
 
-                                        <h6 class="title">Title Menu One</h6>
+                                        <a class="title" href="#">Title Menu One</a>
                                         <ul class="list-unstyled">
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->
@@ -87,12 +81,12 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu Two</h6>
                                         <ul class="list-unstyled">
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->
@@ -100,12 +94,12 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu Three</h6>
                                         <ul class="list-unstyled">
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div>
@@ -113,12 +107,12 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Title Menu Four</h6>
                                         <ul class="list-unstyled">
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
-                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                            <li><a class="link-producto" href="#">Custom Menu</a></li>
                                         </ul>
                                     </div> <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->
@@ -134,18 +128,18 @@
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" data-bs-toggle="dropdown"> Mega menu </a>
+                        <a class="nav-link col-8" href="#" data-bs-toggle="dropdown"> Mega menu </a>
                         <ul class="dropdown-menu">
 
                             <li class="has-megasubmenu">
-                                <a class="dropdown-item" href="#"> Title Menu One </a>
+                                <a class="dropdown-item dropdown-subcategoria" href="#"> Title Menu One </a>
                                 <div class="megasubmenu dropdown-menu">
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -154,11 +148,11 @@
                                 <div class="megasubmenu dropdown-menu">
 
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
                                     </ul>
 
                                 </div>
@@ -168,11 +162,11 @@
                                 <div class="megasubmenu dropdown-menu">
 
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
                                     </ul>
 
                                 </div>
@@ -182,11 +176,11 @@
                                 <div class="megasubmenu dropdown-menu">
 
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
+                                        <li><a class="link-producto" href="#">Custom Menu</a></li>
                                     </ul>
 
                                 </div>
@@ -202,36 +196,26 @@
 
     {{-- banner carrusel oferta --}}
     <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <div class="container">
+            <div class="splide" id="splidePrincipal">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="{{ asset('img/carousel.jpg') }}" class="d-block w-100" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('img/carousel.jpg') }}" class="d-block w-100" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('img/carousel.jpg') }}" class="d-block w-100" alt="...">
+                        </li>
+                    </ul>
+                </div>
+                <div class="splide__progress">
+                    <div class="splide__progress__bar bg-degrado">
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{{ asset('img/carousel.jpg') }}" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('img/carousel1.jpg') }}" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('img/carousel2.jpg') }}" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
 
@@ -239,10 +223,11 @@
     <section class="page-section pb-3">
         <h2 class="text-center page-section-heading">Los más vendidos</h2>
         <div class="container container--flex">
-            <div class="column column--50-25">
+            <div class="card column column--50-25">
                 <img src="img/10.jpg" alt="" class="product__img">
                 <div class="product__title">Especiales del 2017</div>
                 <div class="product__price">$100</div>
+                <a href="#" class="stretched-link"></a>
             </div>
             <div class="column column--50-25">
                 <img src="img/11.png" alt="" class="product__img">
@@ -265,17 +250,39 @@
     {{-- slider2 --}}
     <section class="page-section pb-3">
         <h2 class="page-section-heading text-center mb-3">Ofertas del día</h2>
-
-        <div class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="img/11.png" width="100%" style="border-radius: 1em"></li>
-                    <li class="splide__slide"><img src="img/12.jpg" width="100%" style="border-radius: 1em"></li>
-                    <li class="splide__slide"><img src="img/13.jpg" width="100%" style="border-radius: 1em" d></li>
-                </ul>
-            </div>
-            <div class="splide__progress">
-                <div class="splide__progress__bar">
+        <div class="container">
+            <div class="splide" id="splidePromo">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="column">
+                                <img src="img/10.jpg" alt="" class="product__img">
+                                <div class="product__title">Especiales del 2017</div>
+                                <div class="product__price">$100</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="column">
+                                <img src="img/11.png" alt="" class="product__img">
+                                <div class="product__title">Especiales del 2018</div>
+                                <div class="product__price">$100</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="column">
+                                <img src="img/12.jpg" alt="" class="product__img">
+                                <div class="product__title">Especiales del 2019</div>
+                                <div class="product__price">$100</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="column">
+                                <img src="img/13.jpg" alt="" class="product__img">
+                                <div class="product__title">Especiales del 2020</div>
+                                <div class="product__price">$100</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
