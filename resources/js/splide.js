@@ -13,6 +13,11 @@ window.splide = new Splide('.splide', {
     classes: {
       page: 'splide__pagination__page bg-splide',
     },
+    breakpoints: {
+      425: {
+        arrows: false,
+      },
+    }
   }).mount();
 
   new Splide ('#splidePromo' ,{

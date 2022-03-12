@@ -2,6 +2,50 @@ body{
     margin: 0;
  }
 
+ .font-comentario{
+    font-family: 'Sansita Swashed', cursive;
+ }
+
+ .text-icon{
+     color: $naranja-fuerte;
+     text-shadow: 2px 2px 5px $gris-oscuro;
+ }
+.text-icon-txt{
+    color: $gris-claro;
+    text-shadow: 2px 2px 5px $naranja-claro;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.etiqueta{
+    position: absolute;
+    top: 20px;
+    font-size: 18px;
+    background-image: $degrado;
+    text-align:center;             
+}
+.etiqueta:before {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: inline-block;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+}
+.etiqueta:after {
+    display: inline-block;
+    border: 14px solid;
+    border-color: transparent transparent transparent #FFDD00;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    content: "";
+    display: inline-block;
+}
+ 
+
 .container--flex{
     display: flex;
     flex-wrap: wrap;
@@ -120,16 +164,13 @@ body{
      }
 
      .buscar-pequeno{
-        visibility: hidden;
-        height: 0;
+        content-visibility: hidden;
      }
 }
 
 @media screen and (max-width:480px){
     .buscar{
-        visibility: hidden;
-        height: 0;
-        width: 0;
+        content-visibility: hidden;
      }
      .product__img{
         height: 180px;

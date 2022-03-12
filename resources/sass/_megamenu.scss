@@ -21,6 +21,35 @@
     background-color: $naranja-claro;
 }
 
+.linkprincipal-mobile{
+    color: white;
+    text-decoration: none;
+}
+
+.linkprincipal-mobile:hover{
+    color: $naranja-claro;
+}
+
+.megamenu-mobile, .megamenu-mobile:hover{
+    color: $naranja-claro;
+    text-decoration: none;
+}
+
+.megamenu-mobile.collapsed{
+    transform: rotate(180deg);
+    color: white;
+}
+
+.submegamenu-mobile, .submegamenu-mobile:hover{
+    color: $gris-oscuro;
+    text-decoration: none;
+}
+
+.submegamenu-mobile.collapsed{
+    transform: rotate(180deg);
+    color: $naranja-fuerte;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
@@ -33,8 +62,12 @@
     .navbar .nav-item .dropdown-menu{ 
         display: none; 
     }
+    .navbar .nav-item .nav-link{
+        color: white;
+     }
 	.navbar .nav-item:hover .nav-link{
         color: $naranja-claro;
+        background-color: black;
      }
 	.navbar .nav-item:hover .dropdown-menu{
          display: block; 

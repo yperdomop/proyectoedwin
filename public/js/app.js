@@ -11861,6 +11861,11 @@ new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"]('#splidePrincipal',
   resetProgress: false,
   classes: {
     page: 'splide__pagination__page bg-splide'
+  },
+  breakpoints: {
+    425: {
+      arrows: false
+    }
   }
 }).mount();
 new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"]('#splidePromo', {
